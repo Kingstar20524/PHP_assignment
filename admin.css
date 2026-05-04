@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #e8edf2;
+    min-height: 100vh;
+    color: #2c3e50;
+}
+
+/* ---- Navbar ---- */
+.navbar {
+    background-color: #6c3483;
+    color: white;
+    padding: 14px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-title {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 14px;
+}
+
+.btn-logout {
+    background: white;
+    color: #6c3483;
+    padding: 6px 14px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.btn-logout:hover {
+    background: #f0e0ff;
+}
+
+/* ---- Container ---- */
+.container {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* ---- Alerts ---- */
+.alert {
+    padding: 12px 16px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.alert.success {
+    background: #d5f5e3;
+    color: #1e8449;
+    border-left: 4px solid #1e8449;
+}
+
+.alert.error {
+    background: #fdecea;
+    color: #c0392b;
+    border-left: 4px solid #c0392b;
+}
+
+/* ---- Layout ---- */
+.layout {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 24px;
+}
+
+/* ---- Panel ---- */
+.panel {
+    background: white;
+    border-radius: 10px;
+    padding: 22px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+.panel-header h3 {
+    font-size: 16px;
+    color: #2c3e50;
+}
+
+/* ---- Sub Form ---- */
+.sub-form {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 14px;
+    margin-bottom: 16px;
+    border: 1px solid #ecf0f1;
+}
+
+.sub-form input {
+    width: 100%;
+    padding: 8px 10px;
+    margin-bottom: 8px;
+    border: 1px solid #ccd1d9;
+    border-radius: 5px;
+    font-size: 13px;
+    outline: none;
+}
+
+.sub-form input:focus {
+    border-color: #2980b9;
+}
+
+/* ---- Table ---- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 13px;
+}
+
+thead tr {
+    background: #f4f6f8;
+}
+
+thead th {
+    text-align: left;
+    padding: 10px 12px;
+    color: #7f8c8d;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+tbody tr {
+    border-bottom: 1px solid #f0f0f0;
+}
+
+tbody tr:hover {
+    background: #f9fbfd;
+}
+
+tbody tr.active-row {
+    background: #eaf4fb;
+    border-left: 3px solid #2980b9;
+}
+
+tbody td {
+    padding: 10px 12px;
+    vertical-align: middle;
+}
+
+.actions {
+    display: flex;
+    gap: 6px;
+}
+
+/* ---- Buttons ---- */
+.btn-small {
+    padding: 5px 12px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-green {
+    background: #27ae60;
+    color: white;
+}
+
+.btn-green:hover {
+    background: #229954;
+}
+
+.btn-blue {
+    background: #2980b9;
+    color: white;
+}
+
+.btn-blue:hover {
+    background: #2471a3;
+}
+
+.btn-red {
+    background: #e74c3c;
+    color: white;
+}
+
+.btn-red:hover {
+    background: #cb4335;
+}
+
+/* ---- Grade Badges ---- */
+.grade-badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.grade-a  { background: #d5f5e3; color: #1e8449; }
+.grade-b  { background: #d6eaf8; color: #1a5276; }
+.grade-c  { background: #fef9e7; color: #9a7d0a; }
+.grade-d  { background: #fdebd0; color: #a04000; }
+.grade-f  { background: #fadbd8; color: #922b21; }
+
+/* ---- Empty State ---- */
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: #95a5a6;
+    font-size: 14px;
+}
+
+.no-data {
+    text-align: center;
+    color: #95a5a6;
+    padding: 20px;
+}
+
+/* ---- Responsive ---- */
+@media (max-width: 700px) {
+    .layout {
+        grid-template-columns: 1fr;
+    }
+}
