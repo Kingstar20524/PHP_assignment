@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #e8edf2;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box {
+    background: #ffffff;
+    width: 380px;
+    padding: 40px 35px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* Header */
+.login-header {
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 12px;
+}
+
+.login-header h2 {
+    font-size: 22px;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+.login-header p {
+    font-size: 14px;
+    color: #7f8c8d;
+}
+
+/* Error message */
+.error-msg {
+    background-color: #fdecea;
+    color: #c0392b;
+    border-left: 4px solid #c0392b;
+    padding: 10px 14px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+/* Form */
+.form-group {
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #34495e;
+    margin-bottom: 6px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px 14px;
+    font-size: 14px;
+    border: 1px solid #ccd1d9;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.2s;
+    color: #2c3e50;
+}
+
+.form-group input:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+.form-group input::placeholder {
+    color: #bdc3c7;
+}
+
+/* Button */
+.btn-login {
+    width: 100%;
+    padding: 11px;
+    background-color: #2980b9;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 6px;
+    transition: background-color 0.2s;
+}
+
+.btn-login:hover {
+    background-color: #2471a3;
+}
+
+/* Footer */
+.footer-text {
+    text-align: center;
+    font-size: 12px;
+    color: #95a5a6;
+    margin-top: 22px;
+}
